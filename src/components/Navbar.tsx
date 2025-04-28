@@ -1,6 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { FileDown } from "lucide-react";
+import { Button } from "./ui/button";
 
 type NavLink = {
   name: string;
@@ -44,6 +45,12 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleDownloadResume = () => {
+    // Replace this URL with your actual resume file URL
+    const resumeUrl = "/path-to-your-resume.pdf";
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <header
       className={cn(
@@ -66,6 +73,15 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
+          <Button
+            variant="outline"
+            size="sm"
+            className="ml-4"
+            onClick={handleDownloadResume}
+          >
+            <FileDown className="mr-2 h-4 w-4" />
+            Resume
+          </Button>
         </nav>
         <div className="md:hidden">
           {/* Mobile menu button would go here */}
