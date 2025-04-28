@@ -3,12 +3,13 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
+import WorkSection from "@/components/WorkSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import InfoSection from "@/components/InfoSection";
 import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
   useEffect(() => {
-    // Update document title
     document.title = "My Portfolio";
   }, []);
 
@@ -18,6 +19,8 @@ const Index: React.FC = () => {
       <main>
         <HeroSection />
         <SkillsSection />
+        <WorkSection />
+        <ExperienceSection />
         <InfoSection />
       </main>
       <Footer />

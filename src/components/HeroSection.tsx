@@ -24,8 +24,16 @@ const HeroSection: React.FC = () => {
               thoughtful design.
             </p>
             <div className="flex space-x-4">
-              <Button size="lg">My Work</Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}>
+                My Work
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => {
+                  window.location.href = "mailto:your.email@example.com";
+                }}
+              >
                 Contact Me
               </Button>
             </div>
