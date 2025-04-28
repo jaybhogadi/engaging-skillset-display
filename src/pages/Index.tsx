@@ -6,6 +6,7 @@ import SkillsSection from "@/components/SkillsSection";
 import WorkSection from "@/components/WorkSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import InfoSection from "@/components/InfoSection";
+import CodingPlatforms from "@/components/CodingPlatforms";
 import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
@@ -21,6 +22,7 @@ const Index: React.FC = () => {
         <SkillsSection />
         <WorkSection />
         <ExperienceSection />
+        <CodingPlatforms />
         <InfoSection />
       </main>
       <Footer />
