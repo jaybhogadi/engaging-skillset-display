@@ -4,27 +4,27 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experiences = [
   {
-    role: "Senior Frontend Developer",
-    company: "Tech Corp",
-    period: "2022 - Present",
-    description: "Leading the frontend development team and architecting scalable solutions.",
+    role: "System Engineer",
+    company: "Tata Consultancy Services (TCS)",
+    period: "2023 - Present",
+    // description: "Leading the frontend development team and architecting scalable solutions.",
     responsibilities: [
-      "Developed and maintained multiple React applications",
-      "Mentored junior developers",
-      "Implemented CI/CD pipelines",
+      "Collaborated with team members to develop an AI-powered chatbot in Webex",
+      "Designed and implemented an agentic workflow - driven POC Inventory management system",
+      "Integrated the AI-powered chatbot into pre-existing MBR dashboards",
     ],
   },
-  {
-    role: "Frontend Developer",
-    company: "Digital Solutions Inc",
-    period: "2020 - 2022",
-    description: "Worked on various client projects using modern web technologies.",
-    responsibilities: [
-      "Built responsive web applications",
-      "Optimized application performance",
-      "Collaborated with design team",
-    ],
-  },
+  // {
+  //   role: "Frontend Developer",
+  //   company: "Digital Solutions Inc",
+  //   period: "2020 - 2022",
+  //   description: "Worked on various client projects using modern web technologies.",
+  //   responsibilities: [
+  //     "Built responsive web applications",
+  //     "Optimized application performance",
+  //     "Collaborated with design team",
+  //   ],
+  // },
 ];
 
 const ExperienceSection: React.FC = () => {

@@ -13,18 +13,18 @@ const Footer: React.FC = () => {
             <p className="text-sm text-foreground/70">© {new Date().getFullYear()} All Rights Reserved</p>
           </div>
           <div className="mb-6 md:mb-0">
-            <p className="text-foreground/80 mb-2 text-center md:text-left">Contact me at: <span className="font-medium">your.email@example.com</span></p>
+            <p className="text-foreground/80 mb-2 text-center md:text-left">Contact me at: <span className="font-medium">jayakrishnasri13@gmail.com</span></p>
           </div>
           <div className="flex space-x-4">
-            <a href="https://github.com/yourusername" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/jaybhogadi" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
               <span className="sr-only">GitHub</span>
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/in/yourusername" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jayakrishnasribhogadi/" className="hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
               <span className="sr-only">LinkedIn</span>
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:your.email@example.com" className="hover:text-accent transition-colors">
+            <a href="mailto:jayakrishnasri13@gmail.com" className="hover:text-accent transition-colors">
               <span className="sr-only">Email</span>
               <Mail className="w-6 h-6" />
             </a>

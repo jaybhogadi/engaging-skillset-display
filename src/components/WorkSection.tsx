@@ -4,23 +4,26 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform built with React and Node.js",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    link: "https://project1.com",
+    title: "🛒 Product Recommendation System",
+    description: "A data-driven product recommendation engine built using Flask and machine learning models trained on real sales history.",
+    tech: ["Python", "Machine Learning", "Flask", "Pandas"],
+    code_link:"https://github.com/jaybhogadi/Products_Recommendation_System.git",
+    live_link: "https://products-recommendation-system-r1sz.onrender.com",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    link: "https://project2.com",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Real-time weather monitoring dashboard",
-    tech: ["React", "Weather API", "ChartJS"],
-    link: "https://project3.com",
-  },
+    title: "Sorting Visualizer",
+    description: "A web-based interactive visualizer for learning sorting algorithms, designed to help beginners understand the step-by-step execution of classic sorting techniques through engaging animations.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    code_link:"https://github.com/jaybhogadi/Sorting_Visualizer.git",
+    live_link: "https://sorting-visualizer-kgz8.onrender.com"
+  }
+  
+  // {
+  //   title: "Weather Dashboard",
+  //   description: "Real-time weather monitoring dashboard",
+  //   tech: ["React", "Weather API", "ChartJS"],
+  //   link: "https://project3.com",
+  // },
 ];
 
 const WorkSection: React.FC = () => {
@@ -50,13 +53,22 @@ const WorkSection: React.FC = () => {
                   ))}
                 </div>
                 <a
-                  href={project.link}
+                  href={project.code_link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80"
+                  className="text-primary hover:text-primary/80 mr-4"
                 >
-                  View Project →
+                  🛠️ View Code
                 </a>
+              <a
+                href={project.live_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80"
+              >
+                🚀 View Project
+              </a>
+
               </CardContent>
             </Card>
           ))}

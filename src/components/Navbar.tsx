@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
 
   const handleDownloadResume = () => {
     // Replace this URL with your actual resume file URL
-    const resumeUrl = "/path-to-your-resume.pdf";
+    const resumeUrl = "https://github.com/jaybhogadi/RESUME/blob/main/Resume.pdf";
     window.open(resumeUrl, '_blank');
   };
 

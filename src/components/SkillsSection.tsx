@@ -1,7 +1,6 @@
 
 import React from "react";
 import * as Icons from "lucide-react";
-
 type SkillCategory = {
   title: string;
   skills: string[];
@@ -10,7 +9,7 @@ type SkillCategory = {
 const skillCategories: SkillCategory[] = [
   {
     title: "Languages & Frameworks",
-    skills: ["Python", "CPP", "JavaScript", "FastAPI", "Flask", "React", "Streamlit"],
+    skills: ["Python","JavaScript","CPP","HTML","CSS", "FastAPI", "Flask", "React", "Streamlit"],
   },
   {
     title: "Technologies & Platforms",
@@ -45,11 +44,20 @@ const getIconForSkill = (skill: string) => {
 };
 
 const SkillCard: React.FC<{ skill: string }> = ({ skill }) => {
-  const Icon = getIconForSkill(skill);
-  
+  const imageName = skill.toLowerCase().replace(/[.\s&]/g, "").replace("++", "pp");
+  const imageUrl = `/skills/${imageName}.png`;
+  // const imageUrl = `/skills/Python.jpeg`;
+
   return (
     <div className="bg-secondary rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-1 flex flex-col items-center gap-3">
-      <Icon className="w-8 h-8 text-accent" />
+      <img
+        src={imageUrl}
+        alt={skill}
+        className="w-12 h-12 object-contain"
+        onError={(e) => {
+          (e.target as HTMLImageElement).src = "/skills/default.jpeg"; // fallback image
+        }}
+      />
       <h3 className="text-lg font-semibold text-center">{skill}</h3>
     </div>
   );

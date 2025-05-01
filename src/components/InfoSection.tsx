@@ -24,19 +24,20 @@ const InfoSection: React.FC = () => {
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Senior Developer</CardTitle>
-                  <CardDescription>Company Name • 2022-Present</CardDescription>
+                  <CardTitle>System Engineer</CardTitle>
+                  <CardDescription>Tata Consultancy Services (TCS) • 2023-Present</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Led development of web applications using React and TypeScript. 
-                    Collaborated with designers and product managers to create intuitive user interfaces.
-                    Implemented CI/CD pipelines and mentored junior developers.
+                  Collaborated with team members to develop an AI-powered chatbot in Webex<br></br>
+Designed and implemented an agentic workflow - driven POC Inventory management system<br></br>
+Integrated the AI-powered chatbot into pre-existing dashboards
+
                   </p>
                 </CardContent>
               </Card>
               
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Frontend Developer</CardTitle>
                   <CardDescription>Company Name • 2019-2022</CardDescription>
@@ -48,7 +49,7 @@ const InfoSection: React.FC = () => {
                     Optimized application performance and implemented accessibility standards.
                   </p>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </TabsContent>
           
@@ -56,28 +57,40 @@ const InfoSection: React.FC = () => {
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Master's in Computer Science</CardTitle>
-                  <CardDescription>University Name • 2017-2019</CardDescription>
+                  <CardTitle>Bachelor of Technology (B.Tech) in Information Technology</CardTitle>
+                  <CardDescription>VNRVJIET • 2019 - 2023</CardDescription>
+                  <CardDescription>CGPA 9.36</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p>
-                    Focused on web technologies and software engineering principles.
-                    Completed thesis on optimizing React application performance.
-                    Graduate with honors, GPA 3.8/4.0
+                <p>
+                    Studied algorithms, data structures, Computer Networks, Operating Systems and software development.
+                    Participated in coding competitions and hackathons.
+  
                   </p>
                 </CardContent>
               </Card>
               
               <Card>
                 <CardHeader>
-                  <CardTitle>Bachelor's in Computer Science</CardTitle>
-                  <CardDescription>University Name • 2013-2017</CardDescription>
+                  <CardTitle>Class XII (Intermediate)</CardTitle>
+                  <CardDescription>Sri Chaitanya Junior College • 2017-2019</CardDescription>
+                  <CardDescription>CGPA 9.82</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Studied algorithms, data structures, and software development.
-                    Participated in coding competitions and hackathons.
-                    Minor in UI/UX Design.
+                  Major in Mathematics, Physics, Chemistry
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Class X (SSC)</CardTitle>
+                  <CardDescription>Scholars E.M High School • 2016-2017</CardDescription>
+                  <CardDescription>CGPA 10</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>
+                  
                   </p>
                 </CardContent>
               </Card>
@@ -91,20 +104,20 @@ const InfoSection: React.FC = () => {
               </CardHeader>
               <CardContent>
                 <p className="mb-4">
-                  When I'm not coding, you can find me hiking in nearby mountains, 
-                  experimenting with new recipes in the kitchen, or attending tech meetups.
+                  When I'm not infront of my laptop, you can find me in the gym,chilling with my friends,
+                   or attending tech meetups.
                   I'm passionate about creating technology that makes people's lives easier
                   and more enjoyable.
                 </p>
                 <p className="mb-6">
                   I believe in continuous learning and regularly take online courses to stay
-                  up-to-date with the latest technologies and best practices in web development.
+                  up-to-date with the latest technologies and best practices in development.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Button size="sm" variant="outline">Photography</Button>
+                  <Button size="sm" variant="outline">Crafting</Button>
                   <Button size="sm" variant="outline">Hiking</Button>
                   <Button size="sm" variant="outline">Cooking</Button>
-                  <Button size="sm" variant="outline">Reading</Button>
+                  <Button size="sm" variant="outline">Swimming</Button>
                   <Button size="sm" variant="outline">Travel</Button>
                 </div>
               </CardContent>
