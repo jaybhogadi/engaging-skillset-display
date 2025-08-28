@@ -8,7 +8,7 @@ const projects = [
   description: "Convert any uploaded MP4 video into multiple-choice questions (MCQs). Users can select the desired count of questions, and the system automatically generates them using AI.",
   tech: ["Python", "Generative AI", "Whisper Model", "WebSocket", "React.js"],
   code_link: "https://github.com/jaybhogadi/VidQuest_Full_Stack_Project",
-  live_link: "https://vidquest-backend.onrender.com"
+  live_link: "https://vid-quest-frontend.vercel.app"
 },
   {
     title: "🛒 Product Recommendation System",
