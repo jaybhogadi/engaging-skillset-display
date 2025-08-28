@@ -30,7 +30,7 @@ const CodingPlatforms: React.FC = () => {
     },
     {
       platform: "HackerRank",
-      username: "yourUsername",
+      username: "jaibhogadi",
       score: 1650,
       rank: "5 Star",
       problems: 120,
